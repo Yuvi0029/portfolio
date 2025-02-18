@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvraj Singh - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B0000;
+            --secondary-color: #333;
+            --bg-color: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            padding: 120px 0 60px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #6b0000;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 80px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">YS</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-image" data-aos="fade-right">
+                <img src="IMG_4637.JPG" alt="Yuvraj Singh">
+            </div>
+            <div class="hero-content" data-aos="fade-left">
+                <h1>Yuvraj Singh</h1>
+                <p>Software Developer | MCA Student</p>
+                <p>Seeking a software developer position to leverage my skills in C++, Python, C, and SQL for developing innovative solutions.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2 class="section-title" data-aos="fade-up">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <h3>Programming</h3>
+                    <p>C++, C, Python</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Software</h3>
+                    <p>VS Code</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Libraries</h3>
+                    <p>NumPy, Matplotlib</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Soft Skills</h3>
+                    <p>Leadership, Problem Solving, Creative, Communication</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="project-card" data-aos="fade-up">
+                <h3>Loan Prediction</h3>
+                <p>Machine learning model using Logistic Regression to predict loan approval status based on candidate data.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2 class="section-title" data-aos="fade-up">Contact</h2>
+            <div class="contact-info" data-aos="fade-up">
+                <p>📍 Goverdhan enclave colony, mawana 250401 (Meerut)</p>
+                <p>📱 7533846917</p>
+                <p>✉ Syuvi660@gmail.com</p>
+                <a href="https://www.linkedin.com/in/yuvraj-singh-81b337310" class="btn" target="_blank">LinkedIn Profile</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yuvraj Singh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
